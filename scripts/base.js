@@ -84,7 +84,7 @@
 			var server = servers.shift();
 			if (server) {
 				var script = document.createElement('script');
-				script.src = '//' + server + '/rel/detect.js?' + p.join('&');
+				script.src = 'https://' + server + '/rel/detect.js?' + p.join('&');
 				document.getElementsByTagName('head')[0].appendChild(script);
 
 				wait();
@@ -592,7 +592,7 @@
 				"</div>" +
 
 				"<div id='facebook'>" +
-				"<iframe src='//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fhtml5test.com&amp;width=60&amp;height=65&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=202643099847776' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:The pixel width of the pluginpx; height:65px;' allowTransparency='true'></iframe>" +
+				"<iframe src='https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fhtml5test.com&amp;width=60&amp;height=65&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=202643099847776' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:The pixel width of the pluginpx; height:65px;' allowTransparency='true'></iframe>" +
 				"</div>" +
 
 				"<div id='google'>" +
@@ -607,7 +607,7 @@
 
 
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))
-			{js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
+			{js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
 			(document,"script","twitter-wjs");
 
 			(function() {
@@ -660,10 +660,10 @@
 			this.popup.innerHTML +=
 				"<div id='save'>" +
 				"<p>You can see the results here:</p>" +
-				"<p><a href='" + document.location.protocol + "//html5te.st/" + this.options.id + "'>html5te.st/" + this.options.id + "</a></p>" +
+				"<p><a href='https://html5te.st/" + this.options.id + "'>html5te.st/" + this.options.id + "</a></p>" +
 				"<p>Or scan this QR-code:</p>" +
 				"<p>" +
-				"<img src='https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=" + encodeURIComponent(document.location.protocol + "//html5te.st/" + this.options.id) + "&choe=UTF-8' width='200' height='200'>" +
+				"<img src='https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=" + encodeURIComponent("https://html5te.st/" + this.options.id) + "&choe=UTF-8' width='200' height='200'>" +
 				"</p>" +
 				"<p>The unique id for this test is:<br><code>" + this.options.id + "</code></p>" +
 				"</div>";
