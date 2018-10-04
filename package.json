@@ -1,6 +1,6 @@
 {
   "name": "html5test",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "<img src=\"https://html5te.st/assets/html5test.svg\" width=\"250\">",
   "main": "index.js",
   "scripts": {
